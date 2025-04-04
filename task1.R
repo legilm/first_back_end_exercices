@@ -1,3 +1,14 @@
+# ### 🟢 Exercise 1 — Function with `NULL` Default Argument
+# 
+# **Task:**
+#     Write a function `describe_vector()` that:
+#     
+#     - Takes two arguments: `x` (numeric vector) and `summary_fun = NULL`.
+# - If `summary_fun = NULL`, returns a list with mean, median, and standard deviation.
+# - If `summary_fun` is "mean", "median", or "sd", return only that summary.
+# - If `summary_fun` has any other value, stop with an informative error message.
+
+
 describe_vector <- function(x, summary_fun = NULL) {
     if (!is.numeric(x)) {
         stop("The input 'x' must be a numeric vector.")

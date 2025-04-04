@@ -1,3 +1,16 @@
+# ### 🟢 Exercise 3 — Argument Value Restriction
+# 
+# **Task:**
+#     Write a function `convert_temperature()` that:
+#     
+#     - Takes `temp` (numeric) and `unit` ("C", "F", or "K").
+# - Converts `temp` to Celsius.
+# - If `unit` is invalid, stops with an informative error.
+# - Add a `round = TRUE/FALSE` argument to control rounding.
+# 
+# ---
+
+
 convert_temperature <- function(temp, unit = c("C", "F", "K"), round = TRUE/FALSE){
 
     if (!unit %in% c("C", "F", "K")){
